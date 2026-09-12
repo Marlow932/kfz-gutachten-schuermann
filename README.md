@@ -32,6 +32,27 @@ alle Städte werden gleichmäßig um den Kreis verteilt und vollständig angezei
 und "Webseite v2" – dort wurde er nicht mit behoben, weil nur v3 aktiv angepasst wurde.
 Sag Bescheid, falls das dort auch korrigiert werden soll.
 
+## Update: Logo, Foto, mehr Städte, KVA-Service
+
+- **Neues Logo eingebaut**: als gerahmtes "Siegel" direkt über der Crash-Showcase (passend
+  zum Thema) sowie als Social-Media-Vorschaubild (og:image), das beim Teilen des Links z. B.
+  in WhatsApp angezeigt wird.
+- **Echtes Foto von Stefan** ersetzt das Platzhalter-Symbolbild im Abschnitt "Über mich".
+- **5 weitere Städte ergänzt**: Mettmann, Wülfrath, Heiligenhaus, Sprockhövel, Hattingen
+  (macht 14 Städte inkl. Wuppertal) plus ein Hinweis "Weitere Städte auf Anfrage". Überall
+  aktualisiert: Städte-Liste, Radar-Diagramm, FAQ, Zähler, strukturierte Daten (Schema.org)
+  und `llms.txt`.
+- **Städte-Radar jetzt nach Entfernung sortiert**: zwei Ringe, innen die näheren Orte
+  (Velbert, Schwelm, Remscheid, Haan, Sprockhövel, Wülfrath), außen die weiter entfernten
+  (Solingen, Hilden, Mettmann, Heiligenhaus, Radevormwald, Hattingen, Leverkusen).
+- **Neue Leistung**: Kostenvoranschlag (KVA) für Versicherungen bei kleineren Schäden, als
+  eigene Kachel unter "Leistungen".
+- **Domain hinterlegt**: `unfallschadengutachten-wuppertal.de` in allen Meta-Daten,
+  strukturierten Daten, `sitemap.xml`, `robots.txt` und `llms.txt`.
+- **Textstil bereinigt**: die auffälligen Gedankenstriche ("–") in Überschriften und
+  Fließtext wurden durchgängig durch Punkte, Kommas oder Doppelpunkte ersetzt; echte,
+  grammatikalisch nötige Bindestriche (Kfz-Sachverständiger, E-Mail, …) blieben erhalten.
+
 ## Vor dem Livegang
 
 Identisch zu v1/v2 – siehe [../Webseite/README.md](../Webseite/README.md):

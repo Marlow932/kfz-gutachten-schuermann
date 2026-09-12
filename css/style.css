@@ -659,6 +659,17 @@ html:not([data-theme="light"]) .theme-toggle .i-moon { color: var(--accent-2); }
    ========================================================================== */
 
 .car-showcase { padding-bottom: 60px; }
+.brand-seal {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin: 0 auto 28px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 14px;
+  box-shadow: 0 30px 60px -35px rgba(0, 0, 0, 0.5);
+}
 .car-stage {
   position: relative;
   width: 100%;
@@ -970,6 +981,7 @@ html:not([data-theme="light"]) .theme-toggle .i-moon { color: var(--accent-2); }
   justify-content: center;
 }
 .about-visual img { width: 74%; }
+.about-visual-photo img { width: 100%; height: 100%; object-fit: cover; }
 .about-badge {
   position: absolute;
   bottom: -20px; right: -20px;
@@ -1025,11 +1037,13 @@ html:not([data-theme="light"]) .theme-toggle .i-moon { color: var(--accent-2); }
   background: var(--surface);
   border: 1px solid var(--line-strong);
   border-radius: 999px;
-  padding: 9px 16px;
-  font-size: 0.8rem;
+  padding: 7px 13px;
+  font-size: 0.72rem;
   font-weight: 600;
   white-space: nowrap;
+  z-index: 1;
 }
+.area-pin-far { z-index: 2; }
 .area-map.is-visible .area-pin { transform: translate(-50%, -50%) scale(1); }
 .area-cities { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
 .area-city {
@@ -1043,6 +1057,7 @@ html:not([data-theme="light"]) .theme-toggle .i-moon { color: var(--accent-2); }
 }
 .area-city:hover { border-color: var(--accent-2); transform: translateX(4px); }
 .area-city svg { color: var(--accent-2); flex: none; }
+.area-more-note { margin-top: 18px; color: var(--muted-dim); font-size: 0.9rem; font-style: italic; }
 
 /* ==========================================================================
    Reviews marquee
@@ -1355,6 +1370,7 @@ html:not([data-theme="light"]) .theme-toggle .i-moon { color: var(--accent-2); }
   .process-card { padding: 34px; }
   .hero { padding: 120px 0 70px; }
   .footer-cta { flex-direction: column; align-items: flex-start; }
+  .area-pin { font-size: 0.62rem; padding: 6px 10px; }
 }
 
 @media (max-width: 520px) {
