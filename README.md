@@ -1,69 +1,55 @@
 # Website Stefan Schürmann — Final
 
-Baut auf v2 ("Agency Edition") auf und ergänzt drei Dinge, die explizit gewünscht wurden:
+Statische Website für Stefan Schürmann, unabhängiger Kfz-Sachverständiger in Wuppertal
+und Umgebung. Live unter: https://marlow932.github.io/kfz-gutachten-schuermann/
 
-## Was ist neu gegenüber v2
+## Features
 
-- **Crash-Showcase** ("Der Ernstfall"-Bereich, direkt nach der Laufschrift): das von dir
-  gelieferte Video zeigt zwei echte Fahrzeuge, die kollidieren, gefolgt von den
-  beschrifteten Schadensmarkierungen (Motorhaube, Scheinwerfer, …) – genau das, was ein
-  Gutachten am Ende leistet. Läuft in einer abgerundeten Karte, startet automatisch von
-  vorn, sobald der Bereich beim Scrollen in den Blickbereich kommt, pausiert außerhalb
-  davon (spart Akku/Datenvolumen) und lässt sich durch Zurückscrollen beliebig oft neu
-  abspielen. Liegt als WebM (klein, Chrome/Firefox/Edge/Safari) mit MP4-Fallback vor, dazu
-  ein Standbild als Poster, bis das Video geladen ist. Bei aktivierter
-  "Bewegung reduzieren"-Einstellung wird nicht automatisch abgespielt, stattdessen gibt es
-  normale Video-Bedienelemente zum manuellen Starten.
-- **Hell-/Dunkelmodus-Schalter** oben rechts im Header (Sonne/Mond-Toggle). Startet mit der
+- Hell-/Dunkelmodus-Schalter oben rechts im Header (Sonne/Mond-Toggle). Startet mit der
   Systemeinstellung des Besuchers, die Wahl wird gespeichert (localStorage) und beim
-  nächsten Besuch beibehalten. Beide Varianten sind komplett neu durchgestylt, nicht nur
-  abgedunkelt/aufgehellt.
-- **Leverkusen ergänzt** im Einsatzgebiet – überall: Städte-Liste, Radar-Diagramm,
-  FAQ-Text, strukturierte Daten (Schema.org) und `llms.txt`.
+  nächsten Besuch beibehalten.
+- **Crash-Showcase** ("Der Ernstfall"-Bereich): echtes Video von zwei kollidierenden
+  Fahrzeugen, gefolgt von beschrifteten Schadensmarkierungen. Startet automatisch, sobald
+  der Bereich beim Scrollen in den Blickbereich kommt, pausiert außerhalb davon und lässt
+  sich durch Zurückscrollen beliebig oft neu abspielen. WebM mit MP4-Fallback und
+  Standbild als Poster. Bei aktivierter "Bewegung reduzieren"-Einstellung kein Autoplay,
+  stattdessen normale Video-Bedienelemente.
+- Neues Logo als gerahmtes "Siegel" über der Crash-Showcase, im Header/Footer als
+  Marke und als Social-Media-Vorschaubild (og:image). Favicon ist ein Ausschnitt
+  desselben Logos (Kollisions-Detail, ohne Text, damit es auch bei 16x16 px lesbar bleibt).
+- Echtes Foto von Stefan im Abschnitt "Über mich".
+- Einsatzgebiet: 14 Städte inkl. Wuppertal (Solingen, Remscheid, Velbert, Haan, Hilden,
+  Schwelm, Radevormwald, Leverkusen, Mettmann, Wülfrath, Heiligenhaus, Sprockhövel,
+  Hattingen), plus Hinweis "Weitere Städte auf Anfrage". Das Radar-Diagramm sortiert die
+  Städte nach Entfernung in zwei Ringen (näher/weiter).
+- Leistungen inkl. Kostenvoranschlag (KVA) für Versicherungen bei kleineren Schäden.
+- SEO/GEO: strukturierte Daten (Schema.org LocalBusiness + FAQPage), `sitemap.xml`,
+  `robots.txt`, `llms.txt`, Domain `unfallschadengutachten-wuppertal.de` überall
+  hinterlegt.
 
-## Bugfix: Städte-Radar zeigte fast keine Namen an
+## Kontaktformular-Backend
 
-Im Bereich "Einsatzgebiet" (die kreisförmige Grafik mit den Städtenamen) hatte der
-Container keine feste Breite – dadurch kollabierten alle Städte-Punkte auf einen Fleck
-und fast alle Namen waren unsichtbar bzw. übereinander gequetscht. Das ist jetzt behoben:
-alle Städte werden gleichmäßig um den Kreis verteilt und vollständig angezeigt.
+Das Formular sendet per [Web3Forms](https://web3forms.com) direkt an Stefans
+E-Mail-Postfach, ganz ohne eigenen Server. Schlägt die Zustellung fehl (z. B. weil der
+Access Key noch nicht eingetragen ist), öffnet sich als Rückfallebene automatisch das
+E-Mail-Programm des Besuchers mit vorausgefüllter Nachricht.
 
-**Hinweis:** Derselbe Fehler steckt vermutlich auch noch in den Ordnern "Webseite" (v1)
-und "Webseite v2" – dort wurde er nicht mit behoben, weil nur v3 aktiv angepasst wurde.
-Sag Bescheid, falls das dort auch korrigiert werden soll.
+**Vor dem Livegang noch nötig:**
 
-## Update: Logo, Foto, mehr Städte, KVA-Service
-
-- **Neues Logo eingebaut**: als gerahmtes "Siegel" direkt über der Crash-Showcase (passend
-  zum Thema) sowie als Social-Media-Vorschaubild (og:image), das beim Teilen des Links z. B.
-  in WhatsApp angezeigt wird.
-- **Echtes Foto von Stefan** ersetzt das Platzhalter-Symbolbild im Abschnitt "Über mich".
-- **5 weitere Städte ergänzt**: Mettmann, Wülfrath, Heiligenhaus, Sprockhövel, Hattingen
-  (macht 14 Städte inkl. Wuppertal) plus ein Hinweis "Weitere Städte auf Anfrage". Überall
-  aktualisiert: Städte-Liste, Radar-Diagramm, FAQ, Zähler, strukturierte Daten (Schema.org)
-  und `llms.txt`.
-- **Städte-Radar jetzt nach Entfernung sortiert**: zwei Ringe, innen die näheren Orte
-  (Velbert, Schwelm, Remscheid, Haan, Sprockhövel, Wülfrath), außen die weiter entfernten
-  (Solingen, Hilden, Mettmann, Heiligenhaus, Radevormwald, Hattingen, Leverkusen).
-- **Neue Leistung**: Kostenvoranschlag (KVA) für Versicherungen bei kleineren Schäden, als
-  eigene Kachel unter "Leistungen".
-- **Domain hinterlegt**: `unfallschadengutachten-wuppertal.de` in allen Meta-Daten,
-  strukturierten Daten, `sitemap.xml`, `robots.txt` und `llms.txt`.
-- **Textstil bereinigt**: die auffälligen Gedankenstriche ("–") in Überschriften und
-  Fließtext wurden durchgängig durch Punkte, Kommas oder Doppelpunkte ersetzt; echte,
-  grammatikalisch nötige Bindestriche (Kfz-Sachverständiger, E-Mail, …) blieben erhalten.
+1. Auf https://web3forms.com die E-Mail-Adresse eintragen, die die Anfragen empfangen
+   soll (`gutachten.wuppertal@yahoo.de`) — kein Passwort/Account nötig, nur kurze
+   Bestätigung per E-Mail.
+2. Den zugeschickten Access Key in `index.html` eintragen, im Formularfeld:
+   ```html
+   <input type="hidden" name="access_key" value="HIER_ACCESS_KEY_EINFÜGEN">
+   ```
+   (aktuell steht dort ein Platzhalter).
 
 ## Vor dem Livegang
 
-Identisch zu v1/v2 – siehe [../Webseite/README.md](../Webseite/README.md):
-Adresse und Rechtsform im Impressum ergänzen, echte Domain einsetzen, Hosting-Anbieter in
-der Datenschutzerklärung nennen.
-
-## Welche Version an Stefan schicken?
-
-- **v1**: schnell, minimalistisch, zero-dependency
-- **v2**: High-End-Look mit Scroll-Animationen
-- **v3**: wie v2, plus Crash-Showcase-Video mit Schadensmarkierungen,
-  Hell-/Dunkelmodus-Schalter, Leverkusen ergänzt
-
-Inhaltlich sind alle drei identisch – nur die Präsentation unterscheidet sich.
+- **Impressum & Datenschutz**: Adresse, Rechtsform, USt-Angabe und Hosting-Anbieter sind
+  noch als Platzhalter markiert (`.legal-placeholder`) — folgen kurz vor dem Livegang.
+- **Web3Forms Access Key** eintragen (siehe oben).
+- Echte Domain `unfallschadengutachten-wuppertal.de` registrieren/verbinden, falls noch
+  nicht geschehen.
+- Platzhalter-Kundenbewertungen durch echte Google-Rezensionen ersetzen, sobald vorhanden.

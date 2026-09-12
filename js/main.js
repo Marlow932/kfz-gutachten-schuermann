@@ -455,13 +455,10 @@
      -------------------------------------------------------------------- */
   const form = document.querySelector("#contact-form");
   if (form) {
-    const isNetlify = document.documentElement.getAttribute("data-hosting") === "netlify";
-    form.addEventListener("submit", (e) => {
-      const honeypot = form.querySelector('input[name="firma-website"]');
-      if (honeypot && honeypot.value) { e.preventDefault(); return; }
-      if (isNetlify) return;
-      e.preventDefault();
-      const data = new FormData(form);
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const success = form.parentElement.querySelector(".form-success");
+
+    const mailtoFallback = (data) => {
       const body = [
         `Name: ${data.get("name") || ""}`,
         `Telefon: ${data.get("telefon") || ""}`,
@@ -471,10 +468,32 @@
         data.get("nachricht") || "",
       ].join("\n");
       const mailto = `mailto:gutachten.wuppertal@yahoo.de?subject=${encodeURIComponent("Anfrage über Website: " + (data.get("anliegen") || "Kfz-Gutachten"))}&body=${encodeURIComponent(body)}`;
-      const success = form.parentElement.querySelector(".form-success");
-      if (success) success.classList.add("is-visible");
       window.location.href = mailto;
-      form.reset();
+    };
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const honeypot = form.querySelector('input[name="firma-website"]');
+      if (honeypot && honeypot.value) return;
+
+      const data = new FormData(form);
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      })
+        .then((res) => res.json())
+        .then((json) => {
+          if (!json.success) throw new Error(json.message || "Web3Forms error");
+          if (success) success.classList.add("is-visible");
+          form.reset();
+        })
+        .catch(() => mailtoFallback(data))
+        .finally(() => {
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   }
 

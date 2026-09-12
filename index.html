@@ -557,8 +557,10 @@
     <div class="form-card" data-gsap="right">
       <h3>Unverbindliche Anfrage</h3>
       <p>Schildern Sie kurz Ihr Anliegen. Ich melde mich zeitnah zurück.</p>
-      <form id="contact-form" name="kontakt" method="POST" data-netlify="true" netlify-honeypot="firma-website">
-        <input type="hidden" name="form-name" value="kontakt">
+      <form id="contact-form" name="kontakt" method="POST">
+        <input type="hidden" name="access_key" value="HIER_WEB3FORMS_ACCESS_KEY_EINFUEGEN">
+        <input type="hidden" name="subject" value="Neue Anfrage über die Website">
+        <input type="hidden" name="from_name" value="Kontaktformular Website">
         <p class="hp-field"><label>Firma<input name="firma-website" tabindex="-1" autocomplete="off"></label></p>
         <div class="field-row">
           <div class="field"><input type="text" id="name" name="name" required placeholder=" " autocomplete="name"><label for="name">Name*</label></div>
@@ -578,7 +580,7 @@
         <label class="consent"><input type="checkbox" required><span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben einverstanden.*</span></label>
         <span class="magnetic-wrap" style="display:block;"><button type="submit" class="btn btn-fill btn-block">Anfrage absenden</button></span>
         <p class="form-note">* Pflichtfeld. Alternativ erreichen Sie mich direkt per WhatsApp oder Telefon.</p>
-        <div class="form-success"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Danke! Ihr E-Mail-Programm öffnet sich gleich.</div>
+        <div class="form-success"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Danke für Ihre Nachricht! Ich melde mich zeitnah bei Ihnen.</div>
       </form>
     </div>
   </div>
