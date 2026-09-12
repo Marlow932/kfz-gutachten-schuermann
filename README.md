@@ -1,4 +1,4 @@
-# Website Stefan Schürmann — v3
+# Website Stefan Schürmann — Final
 
 Baut auf v2 ("Agency Edition") auf und ergänzt drei Dinge, die explizit gewünscht wurden:
 
