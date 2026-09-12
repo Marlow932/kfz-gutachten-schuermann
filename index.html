@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<script>
+(function () {
+  try {
+    var saved = localStorage.getItem("theme");
+    var theme = saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    document.documentElement.setAttribute("data-theme", theme);
+  } catch (e) {}
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kfz-Gutachter Wuppertal | Unabhängiges Unfallgutachten – Stefan Schürmann</title>
+<meta name="description" content="Unabhängiger Kfz-Sachverständiger für Wuppertal, Solingen, Remscheid und Umgebung. Unfallgutachten vor Ort, digital & schnell. Bei unverschuldetem Unfall in der Regel kostenfrei für Sie.">
+<meta name="keywords" content="Kfz-Gutachter Wuppertal, Unfallgutachten Wuppertal, Kfz-Sachverständiger Wuppertal, unabhängiger Gutachter Unfall, Sachverständiger Solingen, Sachverständiger Remscheid">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Stefan Schürmann">
+<link rel="canonical" href="https://www.kfz-gutachten-schuermann.de/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stefan Schürmann – Kfz-Sachverständiger">
+<meta property="og:title" content="Kfz-Gutachter Wuppertal | Unabhängiges Unfallgutachten">
+<meta property="og:description" content="Unabhängiger Kfz-Sachverständiger für Wuppertal und Umgebung. Schnell vor Ort, Gutachten digital, bei unverschuldetem Unfall in der Regel kostenfrei.">
+<meta property="og:url" content="https://www.kfz-gutachten-schuermann.de/">
+<meta property="og:image" content="https://www.kfz-gutachten-schuermann.de/assets/img/og-image.jpg">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kfz-Gutachter Wuppertal | Unabhängiges Unfallgutachten">
+<meta name="twitter:image" content="https://www.kfz-gutachten-schuermann.de/assets/img/og-image.jpg">
+<meta name="geo.region" content="DE-NW">
+<meta name="geo.placename" content="Wuppertal">
+<meta name="theme-color" content="#06070a">
+
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/favicon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "AutomotiveBusiness"],
+  "name": "Stefan Schürmann – Kfz-Sachverständiger",
+  "description": "Unabhängiger Kfz-Sachverständiger mit 20 Jahren Kfz-Erfahrung. Unfallgutachten vor Ort bei Privatpersonen und Werkstätten in Wuppertal und Umgebung, digitale Gutachtenübermittlung.",
+  "image": "https://www.kfz-gutachten-schuermann.de/assets/img/og-image.jpg",
+  "url": "https://www.kfz-gutachten-schuermann.de/",
+  "telephone": "+4915120474428",
+  "email": "gutachten.wuppertal@yahoo.de",
+  "priceRange": "Bei unverschuldetem Unfall in der Regel kostenfrei",
+  "address": { "@type": "PostalAddress", "addressLocality": "Wuppertal", "addressRegion": "Nordrhein-Westfalen", "addressCountry": "DE" },
+  "areaServed": [
+    { "@type": "City", "name": "Wuppertal" }, { "@type": "City", "name": "Solingen" },
+    { "@type": "City", "name": "Remscheid" }, { "@type": "City", "name": "Velbert" },
+    { "@type": "City", "name": "Haan" }, { "@type": "City", "name": "Hilden" },
+    { "@type": "City", "name": "Schwelm" }, { "@type": "City", "name": "Radevormwald" },
+    { "@type": "City", "name": "Leverkusen" }
+  ],
+  "founder": { "@type": "Person", "name": "Stefan Schürmann" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Was kostet ein Kfz-Unfallgutachten für mich als Privatperson?", "acceptedAnswer": { "@type": "Answer", "text": "Bei einem unverschuldeten Unfall trägt in der Regel die gegnerische Versicherung die Kosten für das Sachverständigengutachten. Für Sie entstehen dabei üblicherweise keine Kosten." } },
+    { "@type": "Question", "name": "Wie schnell bekomme ich einen Besichtigungstermin?", "acceptedAnswer": { "@type": "Answer", "text": "In der Regel sehr kurzfristig, oft innerhalb von 24 bis 48 Stunden nach der ersten Kontaktaufnahme." } },
+    { "@type": "Question", "name": "In welchen Städten ist der Kfz-Sachverständige tätig?", "acceptedAnswer": { "@type": "Answer", "text": "Wuppertal und die nähere Umgebung, unter anderem Solingen, Remscheid, Velbert, Haan, Hilden, Schwelm, Radevormwald und Leverkusen." } },
+    { "@type": "Question", "name": "Was ist der Unterschied zu einem Gutachter der Versicherung?", "acceptedAnswer": { "@type": "Answer", "text": "Ein unabhängiger Kfz-Sachverständiger wird von Ihnen beauftragt und ist keiner Versicherung verpflichtet, sondern ermittelt den Schaden neutral in Ihrem Interesse." } },
+    { "@type": "Question", "name": "Kommt der Sachverständige auch direkt zur Werkstatt?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, die Besichtigung findet dort statt, wo es am praktischsten ist – Werkstatt, Zuhause oder Unfallort." } },
+    { "@type": "Question", "name": "Wie und wann erhalte ich das fertige Gutachten?", "acceptedAnswer": { "@type": "Answer", "text": "Digital und in der Regel zeitnah per E-Mail, inklusive Fotodokumentation und Schadenkalkulation." } }
+  ]
+}
+</script>
+</head>
+<body class="is-loading">
+
+<div class="preloader" aria-hidden="true">
+  <div class="preloader-mark"><span>Stefan Schürmann</span></div>
+  <div class="preloader-bar"><i></i></div>
+</div>
+
+<div class="noise"></div>
+<div class="progress-bar"></div>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;">Zum Inhalt springen</a>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-links">
+      <a href="tel:+4915120474428">+49 151 20474428</a>
+      <a href="mailto:gutachten.wuppertal@yahoo.de">gutachten.wuppertal@yahoo.de</a>
+    </div>
+    <div>Wuppertal &amp; Umgebung</div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="#top" class="brand">
+      <img src="assets/img/favicon-192.png" alt="Logo Stefan Schürmann" width="40" height="40">
+      <span>Stefan Schürmann<small>Kfz-Sachverständiger · Wuppertal</small></span>
+    </a>
+    <div class="nav-actions">
+      <button class="theme-toggle" type="button" aria-label="Hell-/Dunkelmodus umschalten" aria-pressed="false">
+        <span class="theme-toggle-track">
+          <svg class="i-sun" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2 12h2.2M19.8 12H22M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+          <svg class="i-moon" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <span class="theme-toggle-thumb"></span>
+        </span>
+      </button>
+      <span class="magnetic-wrap nav-wa"><a href="https://wa.me/4915120474428" class="btn btn-wa btn-sm" target="_blank" rel="noopener">WhatsApp</a></span>
+      <button class="menu-btn" aria-expanded="false" aria-label="Menü öffnen">
+        <span class="label">Menü</span>
+        <span class="box"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-overlay" aria-hidden="true">
+  <div class="container nav-overlay-grid">
+    <nav class="nav-overlay-links">
+      <a href="#leistungen"><span class="idx">01</span> Leistungen</a>
+      <a href="#ablauf"><span class="idx">02</span> Ablauf</a>
+      <a href="#zielgruppen"><span class="idx">03</span> Für wen</a>
+      <a href="#ueber-mich"><span class="idx">04</span> Über mich</a>
+      <a href="#einsatzgebiet"><span class="idx">05</span> Einsatzgebiet</a>
+      <a href="#faq"><span class="idx">06</span> FAQ</a>
+      <a href="#kontakt"><span class="idx">07</span> Kontakt</a>
+    </nav>
+    <div class="nav-overlay-side">
+      <h4>Direkt erreichen</h4>
+      <a class="contact-line" href="tel:+4915120474428">+49 151 20474428</a>
+      <a class="contact-line" href="https://wa.me/4915120474428" target="_blank" rel="noopener">WhatsApp öffnen</a>
+      <a class="contact-line" href="mailto:gutachten.wuppertal@yahoo.de">gutachten.wuppertal@yahoo.de</a>
+    </div>
+  </div>
+  <div class="container nav-overlay-foot">
+    <span>© <span id="year">2026</span> Stefan Schürmann</span>
+    <span>Wuppertal &amp; Umgebung</span>
+  </div>
+</div>
+
+<main id="main">
+<div id="top"></div>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-orb o1"></div>
+  <div class="hero-orb o2"></div>
+
+  <div class="container">
+    <div class="hero-top">
+      <div class="hero-badges">
+        <span class="hero-badge"><i></i> Unabhängig &amp; neutral</span>
+        <span class="hero-badge"><i></i> 20 Jahre Kfz-Erfahrung</span>
+        <span class="hero-badge"><i></i> Termin vor Ort</span>
+      </div>
+    </div>
+
+    <h1>
+      <span class="split-line"><span>Ihr Kfz-Sachverständiger</span></span>
+      <span class="split-line"><span>für <em>Wuppertal</em> &amp;</span></span>
+      <span class="split-line"><span>Umgebung.</span></span>
+    </h1>
+
+    <div class="hero-bottom">
+      <p class="hero-sub">Unfallgutachten schnell, unabhängig und unkompliziert – ich komme zu Ihnen, zur Werkstatt oder an den Unfallort und liefere Ihr Gutachten digital. Bei unverschuldetem Unfall in der Regel kostenfrei für Sie.</p>
+      <div class="hero-cta">
+        <span class="magnetic-wrap"><a href="https://wa.me/4915120474428?text=Hallo%20Herr%20Sch%C3%BCrmann%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Termin%20anfragen." class="btn btn-fill" target="_blank" rel="noopener">Termin per WhatsApp</a></span>
+        <span class="magnetic-wrap"><a href="#kontakt" class="btn btn-line">Kontaktformular</a></span>
+      </div>
+    </div>
+
+    <div class="hero-stats" data-gsap-group>
+      <div data-gsap-item><span class="num"><span data-counter="20">0</span>+</span><span class="label">Jahre Erfahrung</span></div>
+      <div data-gsap-item><span class="num"><span data-counter="9">0</span></span><span class="label">Städte im Gebiet</span></div>
+      <div data-gsap-item><span class="num"><span data-counter="24">0</span>h</span><span class="label">meist schnelle Rückmeldung</span></div>
+      <div data-gsap-item><span class="num"><span data-counter="100">0</span>%</span><span class="label">unabhängig</span></div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><div class="line"><i></i></div> Scroll</div>
+</section>
+
+<!-- ===== Marquee ===== -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> Unabhängig &amp; neutral</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Kurzfristige Termine</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Digitales Gutachten</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Persönlicher Service</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Wuppertal &amp; Umgebung</span>
+  </div>
+</div>
+
+<!-- ===== Crash Showcase ===== -->
+<section class="car-showcase" id="showcase">
+  <div class="container">
+    <div class="head center" data-gsap style="margin-left:auto;margin-right:auto;">
+      <span class="tag" style="justify-content:center;">Der Ernstfall</span>
+      <h2>Jeder Unfall hinterlässt Spuren.</h2>
+      <p style="margin-left:auto;margin-right:auto;">Genau in diesem Moment beginnt meine Arbeit: jede Schadensstelle unabhängig dokumentieren und markieren – bis ins Detail. Scrollen Sie weiter.</p>
+    </div>
+  </div>
+  <div class="car-stage" data-gsap>
+    <video
+      id="crash-video"
+      class="crash-video"
+      muted
+      playsinline
+      loop
+      preload="metadata"
+      poster="assets/video/crash-poster.jpg"
+      aria-label="Animation: zwei Fahrzeuge kollidieren, anschließend werden die Schadensstellen markiert und beschriftet"
+    >
+      <source src="assets/video/crash-demo.webm" type="video/webm" />
+      <source src="assets/video/crash-demo.mp4" type="video/mp4" />
+    </video>
+    <noscript><p class="car-fallback-note">Für die Wiedergabe der Animation wird JavaScript benötigt.</p></noscript>
+  </div>
+</section>
+
+<!-- ===== Leistungen (Bento) ===== -->
+<section id="leistungen">
+  <div class="container">
+    <div class="head" data-gsap>
+      <span class="tag">Leistungen</span>
+      <h2>Unfallgutachten aus einer Hand.</h2>
+      <p>Vom ersten Anruf bis zum fertigen Gutachten – klar, nachvollziehbar und ohne Umwege.</p>
+    </div>
+
+    <div class="bento">
+      <div class="bento-card wide" data-gsap>
+        <div class="bento-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="7" rx="1"/><path d="M5 11l1.5-5h11L19 11"/><circle cx="7.5" cy="18" r="1.5"/><circle cx="16.5" cy="18" r="1.5"/></svg></div>
+        <h3>Unfallschadengutachten</h3>
+        <p>Vollständige Schadenaufnahme, Fotodokumentation und Reparaturkostenkalkulation nach einem Verkehrsunfall – als Grundlage für Ihre Ansprüche.</p>
+      </div>
+      <div class="bento-card wide" data-gsap>
+        <div class="bento-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Besichtigung vor Ort</h3>
+        <p>Ich komme zu Ihnen nach Hause, in die Werkstatt oder an den Unfallort – ohne dass Sie sich um die Organisation kümmern müssen.</p>
+      </div>
+      <div class="bento-card" data-gsap>
+        <div class="bento-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>Digital &amp; schnell</h3>
+        <p>Das fertige Gutachten erhalten Sie zeitnah digital per E-Mail.</p>
+      </div>
+      <div class="bento-card" data-gsap>
+        <div class="bento-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h3>Werkstatt-Partner</h3>
+        <p>Ein verlässlicher Sachverständiger als Partner an Ihrer Seite.</p>
+      </div>
+      <div class="bento-card" data-gsap>
+        <div class="bento-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></div>
+        <h3>Neutral &amp; objektiv</h3>
+        <p>Keine Versicherungsbindung – Ihr Schaden in Ihrem Interesse.</p>
+      </div>
+      <div class="bento-card" data-gsap>
+        <div class="bento-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></div>
+        <h3>Für Kanzleien</h3>
+        <p>Rückfragen zum technischen Sachverhalt, gut erreichbar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Stats ===== -->
+<section class="section-tight section-line">
+  <div class="container">
+    <div class="stats-strip">
+      <div class="stat" data-gsap style="--delay:0s"><div class="num"><span data-counter="20">0</span>+</div><p>Jahre Erfahrung im Kfz-Bereich</p></div>
+      <div class="stat" data-gsap><div class="num"><span data-counter="100">0</span>%</div><p>Unabhängig &amp; neutral</p></div>
+      <div class="stat" data-gsap><div class="num"><span data-counter="9">0</span></div><p>Städte im Einsatzgebiet</p></div>
+      <div class="stat" data-gsap><div class="num"><span data-counter="24">0</span>h</div><p>meist schnelle Rückmeldung</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Ablauf — pinned scrollytelling ===== -->
+<section class="process-pin" id="ablauf">
+  <div class="process-pin-inner">
+    <div class="container process-head">
+      <span class="tag">So einfach geht's</span>
+      <h2 style="font-family:var(--font-display);font-weight:600;font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-0.02em;">Ihr Weg zum Gutachten.</h2>
+    </div>
+    <div class="process-track">
+      <div class="process-card">
+        <div class="step-no">01</div>
+        <h3>Kontakt aufnehmen</h3>
+        <p>Per Anruf, WhatsApp oder Kontaktformular schildern Sie kurz Ihr Anliegen.</p>
+      </div>
+      <div class="process-card">
+        <div class="step-no">02</div>
+        <h3>Termin vereinbaren</h3>
+        <p>Wir stimmen kurzfristig einen Termin ab – bei Ihnen, in der Werkstatt oder vor Ort.</p>
+      </div>
+      <div class="process-card">
+        <div class="step-no">03</div>
+        <h3>Besichtigung</h3>
+        <p>Ich nehme den Schaden auf, dokumentiere ihn vollständig mit Fotos und Kalkulation.</p>
+      </div>
+      <div class="process-card">
+        <div class="step-no">04</div>
+        <h3>Gutachten digital</h3>
+        <p>Sie erhalten Ihr fertiges Gutachten zeitnah digital per E-Mail – startklar für alles Weitere.</p>
+      </div>
+    </div>
+    <div class="process-progress"><i></i></div>
+  </div>
+</section>
+
+<!-- ===== Zielgruppen ===== -->
+<section id="zielgruppen">
+  <div class="container">
+    <div class="head center" data-gsap style="margin-left:auto;margin-right:auto;">
+      <span class="tag" style="justify-content:center;">Für wen ich da bin</span>
+      <h2>Passgenauer Service für jede Situation.</h2>
+    </div>
+
+    <div class="tabs" data-gsap>
+      <div class="tabs-nav" role="tablist">
+        <button class="is-active" data-tab="privat" role="tab" aria-selected="true">Privatpersonen</button>
+        <button data-tab="werkstatt" role="tab" aria-selected="false">Werkstätten</button>
+        <button data-tab="anwalt" role="tab" aria-selected="false">Rechtsanwälte</button>
+        <div class="tabs-indicator"></div>
+      </div>
+      <div class="tab-panels">
+        <div class="tab-panel is-active" data-panel="privat">
+          <div>
+            <h3>Sie hatten einen unverschuldeten Unfall?</h3>
+            <p>Ich kümmere mich um die vollständige Dokumentation Ihres Schadens – schnell, unkompliziert und in Ihrem Interesse. Die Kosten trägt in der Regel die gegnerische Versicherung.</p>
+            <span class="magnetic-wrap"><a href="https://wa.me/4915120474428" class="btn btn-wa btn-sm" target="_blank" rel="noopener">Direkt per WhatsApp anfragen</a></span>
+          </div>
+          <ul class="tab-list">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> In der Regel kostenfrei für Sie</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Termin bei Ihnen zu Hause möglich</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Neutrale, unabhängige Bewertung</li>
+          </ul>
+        </div>
+        <div class="tab-panel" data-panel="werkstatt">
+          <div>
+            <h3>Ein verlässlicher Partner für Ihre Werkstatt</h3>
+            <p>Ich möchte bewusst ein kleines Netzwerk guter Werkstätten in Wuppertal und Umgebung aufbauen. Schnelle Termine, saubere Dokumentation, unkomplizierte Abstimmung.</p>
+            <span class="magnetic-wrap"><a href="#kontakt" class="btn btn-line btn-sm">Partnerschaft anfragen</a></span>
+          </div>
+          <div class="tab-visual">
+            <div class="tab-visual-row"><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><div><strong>Schneller Termin</strong><span>Kurze Reaktionszeiten</span></div></div>
+            <div class="tab-visual-row"><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></span><div><strong>Vollständige Doku</strong><span>Fotos &amp; Kalkulation</span></div></div>
+          </div>
+        </div>
+        <div class="tab-panel" data-panel="anwalt">
+          <div>
+            <h3>Fundierte Gutachten für Ihre Mandate</h3>
+            <p>Neutraler Kfz-Sachverständiger, bewusst außerhalb der Rechtsberatung: vollständige technische Dokumentation und verlässliche Rückfragebeantwortung.</p>
+            <span class="magnetic-wrap"><a href="mailto:gutachten.wuppertal@yahoo.de" class="btn btn-line btn-sm">Kontakt für Kanzleien</a></span>
+          </div>
+          <ul class="tab-list">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Schneller Besichtigungstermin</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Nachvollziehbare Dokumentation</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Gute Erreichbarkeit</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Callout ===== -->
+<section class="section-tight">
+  <div class="container">
+    <div class="callout" data-gsap="scale">
+      <div class="callout-ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <div>
+        <h3>Unverschuldeter Unfall? In der Regel kostenfrei.</h3>
+        <p>Bei einem unverschuldeten Verkehrsunfall übernimmt üblicherweise die gegnerische Versicherung die Kosten für Ihr unabhängiges Sachverständigengutachten.</p>
+        <small>Keine Rechtsberatung – für eine verbindliche Einschätzung wenden Sie sich an Ihre Versicherung oder eine Rechtsanwältin/einen Rechtsanwalt.</small>
+      </div>
+      <span class="magnetic-wrap"><a href="https://wa.me/4915120474428" class="btn btn-fill" target="_blank" rel="noopener">Jetzt anfragen</a></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section id="ueber-mich">
+  <div class="container about">
+    <div class="about-visual" data-gsap="left">
+      <img src="assets/img/logo-icon-raw.png" alt="Symbolbild Kfz-Unfallgutachten">
+      <div class="about-badge"><strong>20+</strong><span>Jahre Erfahrung</span></div>
+    </div>
+    <div class="about-copy" data-gsap="right">
+      <span class="tag">Über mich</span>
+      <h2 style="font-family:var(--font-display);font-weight:600;font-size:clamp(2rem,3.6vw,2.8rem);line-height:1.14;letter-spacing:-0.02em;margin-bottom:24px;">Seit 20 Jahren im Kfz-Bereich zu Hause.</h2>
+      <p>Ich bin Stefan Schürmann und seit 20 Jahren im Kfz-Bereich tätig. Mit diesem Wissen mache ich mich jetzt als unabhängiger Kfz-Sachverständiger selbstständig – mit dem klaren Ziel, Privatpersonen, Werkstätten und Kanzleien in Wuppertal und Umgebung einen schnellen, unkomplizierten und persönlichen Gutachterservice zu bieten.</p>
+      <p>Mir ist wichtig, dass Sie sich um möglichst wenig selbst kümmern müssen: Ich komme zur Werkstatt oder direkt zu Ihnen, übernehme die vollständige Besichtigung und liefere das fertige Gutachten digital.</p>
+      <ul class="about-points">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 20 Jahre Kfz-Erfahrung</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Unabhängig &amp; neutral</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Persönlicher Ansprechpartner</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Mobil vor Ort</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Einsatzgebiet ===== -->
+<section id="einsatzgebiet">
+  <div class="container area-wrap">
+    <div data-gsap="left">
+      <span class="tag">Einsatzgebiet</span>
+      <h2 style="font-family:var(--font-display);font-weight:600;font-size:clamp(2rem,3.6vw,2.8rem);line-height:1.14;letter-spacing:-0.02em;margin-bottom:20px;">Vor Ort in Wuppertal &amp; der gesamten Umgebung.</h2>
+      <p style="color:var(--muted);line-height:1.7;margin-bottom:32px;max-width:480px;">Egal ob Wuppertal, das Bergische Land oder die direkte Nachbarschaft – ich bin flexibel unterwegs.</p>
+      <div class="area-cities">
+        <span class="area-city"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Wuppertal</span>
+        <span class="area-city"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Solingen</span>
+        <span class="area-city"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Remscheid</span>
+        <span class="area-city"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Velbert</span>
+        <span class="area-city"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Haan</span>
+        <span class="area-city"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Hilden</span>
+        <span class="area-city"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Schwelm</span>
+        <span class="area-city"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Radevormwald</span>
+        <span class="area-city"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Leverkusen</span>
+      </div>
+    </div>
+    <div class="area-map" data-gsap="right">
+      <div class="area-ring"></div><div class="area-ring r2"></div><div class="area-ring r3"></div>
+      <div class="area-center">Wuppertal<span>Basis</span></div>
+      <span class="area-pin" style="top:9%;left:50%;">Velbert</span>
+      <span class="area-pin" style="top:21%;left:79%;">Schwelm</span>
+      <span class="area-pin" style="top:50%;left:91%;">Radevormwald</span>
+      <span class="area-pin" style="top:79%;left:79%;">Remscheid</span>
+      <span class="area-pin" style="top:91%;left:50%;">Solingen</span>
+      <span class="area-pin" style="top:79%;left:21%;">Leverkusen</span>
+      <span class="area-pin" style="top:50%;left:9%;">Hilden</span>
+      <span class="area-pin" style="top:21%;left:21%;">Haan</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Reviews ===== -->
+<section id="bewertungen" class="section-line">
+  <div class="container">
+    <div class="head center" style="margin-left:auto;margin-right:auto;" data-gsap>
+      <span class="tag" style="justify-content:center;">Bewertungen</span>
+      <h2>Was Kundinnen und Kunden sagen.</h2>
+      <p>Der Gutachterservice startet gerade neu – echte Google-Bewertungen erscheinen in Kürze hier.</p>
+    </div>
+  </div>
+  <div class="container" style="overflow:visible;">
+    <div class="review-viewport" style="overflow-x:auto;cursor:grab;scrollbar-width:none;">
+      <div class="review-track">
+        <div class="review-card"><div class="review-stars">★★★★★</div><p class="quote">„Platzhalter: Hier erscheint demnächst eine echte Google-Rezension zufriedener Kundinnen und Kunden.“</p><div class="review-author"><div class="review-avatar">?</div><div><strong>Beispiel Kunde</strong><span>Wuppertal</span></div></div></div>
+        <div class="review-card"><div class="review-stars">★★★★★</div><p class="quote">„Platzhalter: Hier erscheint demnächst eine echte Google-Rezension zufriedener Kundinnen und Kunden.“</p><div class="review-author"><div class="review-avatar">?</div><div><strong>Beispiel Werkstatt</strong><span>Solingen</span></div></div></div>
+        <div class="review-card"><div class="review-stars">★★★★★</div><p class="quote">„Platzhalter: Hier erscheint demnächst eine echte Google-Rezension zufriedener Kundinnen und Kunden.“</p><div class="review-author"><div class="review-avatar">?</div><div><strong>Beispiel Kanzlei</strong><span>Remscheid</span></div></div></div>
+      </div>
+    </div>
+    <p class="reviews-note">Erste Erfahrungen gesammelt? <a href="#kontakt">Kontaktieren Sie uns</a> – der Google-Link folgt hier.</p>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="section-line">
+  <div class="container">
+    <div class="head center" style="margin-left:auto;margin-right:auto;" data-gsap>
+      <span class="tag" style="justify-content:center;">Häufige Fragen</span>
+      <h2>Gut zu wissen.</h2>
+    </div>
+    <div class="faq-list" data-gsap>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Was kostet ein Kfz-Unfallgutachten für mich?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Bei einem unverschuldeten Unfall trägt in der Regel die gegnerische Versicherung die Kosten. Für Sie entstehen dabei üblicherweise keine Kosten. Eine verbindliche Einschätzung erhalten Sie von Ihrer Versicherung oder einer Rechtsanwältin/einem Rechtsanwalt.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Wie schnell bekomme ich einen Termin?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>In der Regel sehr kurzfristig, oft innerhalb von 24–48 Stunden nach der ersten Kontaktaufnahme – bei Ihnen, am Unfallort oder in der Werkstatt.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">In welchen Städten sind Sie tätig?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Wuppertal und die nähere Umgebung: Solingen, Remscheid, Velbert, Haan, Hilden, Schwelm, Radevormwald und Leverkusen. Fragen Sie gerne auch bei anderen Orten an.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Was unterscheidet Sie von einem Versicherungsgutachter?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Ich werde von Ihnen beauftragt und bin keiner Versicherung verpflichtet – der Schaden wird neutral und in Ihrem Interesse ermittelt.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Kommen Sie auch zur Werkstatt?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Ja, die Besichtigung findet dort statt, wo es am praktischsten ist. Werkstätten müssen sich um die Koordination nicht selbst kümmern.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Wie erhalte ich das fertige Gutachten?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Digital und zeitnah per E-Mail, inklusive Fotodokumentation und Schadenkalkulation.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA band ===== -->
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-band" data-gsap="scale">
+      <h2>Nach einem Unfall zählt jede Stunde.</h2>
+      <p>Schreiben Sie mir jetzt per WhatsApp oder rufen Sie direkt an.</p>
+      <div class="cta-actions">
+        <span class="magnetic-wrap"><a href="https://wa.me/4915120474428" class="btn btn-wa" target="_blank" rel="noopener">WhatsApp öffnen</a></span>
+        <span class="magnetic-wrap"><a href="tel:+4915120474428" class="btn btn-line">+49 151 20474428</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Kontakt ===== -->
+<section id="kontakt">
+  <div class="container contact-wrap">
+    <div data-gsap="left">
+      <span class="tag">Kontakt</span>
+      <h2 style="font-family:var(--font-display);font-weight:600;font-size:clamp(2rem,3.6vw,2.8rem);letter-spacing:-0.02em;">Sprechen wir über Ihren Fall.</h2>
+      <p style="margin-top:18px;color:var(--muted);line-height:1.7;max-width:420px;">Am schnellsten erreichen Sie mich per WhatsApp oder Telefon.</p>
+      <div class="contact-info">
+        <a href="tel:+4915120474428"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span><strong>Telefon</strong><span>+49 151 20474428</span></span></a>
+        <a href="https://wa.me/4915120474428" target="_blank" rel="noopener"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.29-.15-1.73-.85-2-.95s-.46-.15-.66.15-.75.95-.92 1.14-.34.22-.63.07a8.19 8.19 0 0 1-2.4-1.48 9 9 0 0 1-1.66-2.06c-.17-.3 0-.46.13-.6s.29-.34.44-.51a2 2 0 0 0 .29-.48.53.53 0 0 0 0-.51c-.07-.15-.66-1.59-.9-2.18s-.48-.5-.66-.51h-.56a1.08 1.08 0 0 0-.78.37 3.29 3.29 0 0 0-1 2.44 5.71 5.71 0 0 0 1.2 3 13.06 13.06 0 0 0 5 4.42c.7.3 1.25.48 1.68.62a4 4 0 0 0 1.85.11 3 3 0 0 0 2-1.4 2.42 2.42 0 0 0 .17-1.4c-.07-.12-.26-.19-.55-.34z"/><path d="M12 2a10 10 0 0 0-8.62 15L2 22l5.2-1.36A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.09-1.13l-.29-.17-3.09.81.83-3-.19-.31A8 8 0 1 1 12 20z"/></svg></span><span><strong>WhatsApp</strong><span>Direkt chatten</span></span></a>
+        <a href="mailto:gutachten.wuppertal@yahoo.de"><span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg></span><span><strong>E-Mail</strong><span>gutachten.wuppertal@yahoo.de</span></span></a>
+      </div>
+    </div>
+
+    <div class="form-card" data-gsap="right">
+      <h3>Unverbindliche Anfrage</h3>
+      <p>Kurz Ihr Anliegen schildern – ich melde mich zeitnah zurück.</p>
+      <form id="contact-form" name="kontakt" method="POST" data-netlify="true" netlify-honeypot="firma-website">
+        <input type="hidden" name="form-name" value="kontakt">
+        <p class="hp-field"><label>Firma<input name="firma-website" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field-row">
+          <div class="field"><input type="text" id="name" name="name" required placeholder=" " autocomplete="name"><label for="name">Name*</label></div>
+          <div class="field"><input type="tel" id="telefon" name="telefon" placeholder=" " autocomplete="tel"><label for="telefon">Telefon</label></div>
+        </div>
+        <div class="field"><input type="email" id="email" name="email" required placeholder=" " autocomplete="email"><label for="email">E-Mail*</label></div>
+        <div class="field">
+          <select id="anliegen" name="anliegen">
+            <option value="Privatperson nach Unfall">Privatperson nach einem Unfall</option>
+            <option value="Werkstatt">Werkstatt</option>
+            <option value="Rechtsanwalt/Kanzlei">Rechtsanwalt / Kanzlei</option>
+            <option value="Sonstiges">Sonstiges Anliegen</option>
+          </select>
+          <label for="anliegen">Ich bin…</label>
+        </div>
+        <div class="field"><textarea id="nachricht" name="nachricht" required placeholder=" "></textarea><label for="nachricht">Nachricht*</label></div>
+        <label class="consent"><input type="checkbox" required><span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben einverstanden.*</span></label>
+        <span class="magnetic-wrap" style="display:block;"><button type="submit" class="btn btn-fill btn-block">Anfrage absenden</button></span>
+        <p class="form-note">* Pflichtfeld — Alternativ erreichen Sie mich direkt per WhatsApp oder Telefon.</p>
+        <div class="form-success"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Danke! Ihr E-Mail-Programm öffnet sich gleich.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cta">
+      <h2>Bereit für ein unabhängiges Gutachten?</h2>
+      <span class="magnetic-wrap"><a href="https://wa.me/4915120474428" class="btn btn-fill" target="_blank" rel="noopener">Jetzt Kontakt aufnehmen</a></span>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/img/favicon-192.png" alt="Logo">Stefan Schürmann</div>
+        <p style="color:var(--muted);max-width:260px;line-height:1.7;">Unabhängiger Kfz-Sachverständiger für Wuppertal und Umgebung.</p>
+      </div>
+      <div class="footer-col"><h4>Leistungen</h4><ul><li><a href="#leistungen">Unfallgutachten</a></li><li><a href="#ablauf">Ablauf</a></li><li><a href="#zielgruppen">Zielgruppen</a></li></ul></div>
+      <div class="footer-col"><h4>Unternehmen</h4><ul><li><a href="#ueber-mich">Über mich</a></li><li><a href="#einsatzgebiet">Einsatzgebiet</a></li><li><a href="#kontakt">Kontakt</a></li></ul></div>
+      <div class="footer-col"><h4>Rechtliches</h4><ul><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Stefan Schürmann – Kfz-Sachverständiger</span>
+      <span>Wuppertal &amp; Umgebung</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/4915120474428" class="float-wa" target="_blank" rel="noopener" aria-label="WhatsApp öffnen">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.29-.15-1.73-.85-2-.95s-.46-.15-.66.15-.75.95-.92 1.14-.34.22-.63.07a8.19 8.19 0 0 1-2.4-1.48 9 9 0 0 1-1.66-2.06c-.17-.3 0-.46.13-.6s.29-.34.44-.51a2 2 0 0 0 .29-.48.53.53 0 0 0 0-.51c-.07-.15-.66-1.59-.9-2.18s-.48-.5-.66-.51h-.56a1.08 1.08 0 0 0-.78.37 3.29 3.29 0 0 0-1 2.44 5.71 5.71 0 0 0 1.2 3 13.06 13.06 0 0 0 5 4.42c.7.3 1.25.48 1.68.62a4 4 0 0 0 1.85.11 3 3 0 0 0 2-1.4 2.42 2.42 0 0 0 .17-1.4c-.07-.12-.26-.19-.55-.34z"/><path d="M12 2a10 10 0 0 0-8.62 15L2 22l5.2-1.36A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.09-1.13l-.29-.17-3.09.81.83-3-.19-.31A8 8 0 1 1 12 20z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

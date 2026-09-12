@@ -1,0 +1,14 @@
+{
+  "name": "Stefan Schürmann – Kfz-Sachverständiger",
+  "short_name": "Kfz-Gutachten Wuppertal",
+  "description": "Unabhängiger Kfz-Sachverständiger für Wuppertal und Umgebung.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06070a",
+  "theme_color": "#06070a",
+  "lang": "de",
+  "icons": [
+    { "src": "assets/img/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/favicon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
