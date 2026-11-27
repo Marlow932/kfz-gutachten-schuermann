@@ -1,6 +1,6 @@
 /* ==========================================================================
-   Stefan Schürmann – Kfz-Sachverständiger — v2 "Agency" Edition
-   Powered by GSAP + ScrollTrigger + Lenis (loaded via CDN in index.html)
+   Schadenwerk Wuppertal — v2 "Agency" Edition
+   Powered by GSAP + ScrollTrigger + Lenis (self-hosted in assets/vendor/)
    ========================================================================== */
 
 (function () {
@@ -500,8 +500,7 @@
   /* --------------------------------------------------------------------
      Back to top / footer year
      -------------------------------------------------------------------- */
-  const yearEl = document.querySelector("#year");
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
+  document.querySelectorAll("#year, #year2").forEach((el) => { el.textContent = new Date().getFullYear(); });
 
   document.body.classList.add("is-loading");
 })();

@@ -1,7 +1,10 @@
 # Website Stefan Schürmann — Final
 
 Statische Website für Stefan Schürmann, unabhängiger Kfz-Sachverständiger in Wuppertal
-und Umgebung. Live unter: https://marlow932.github.io/kfz-gutachten-schuermann/
+und Umgebung. Domain: https://schadenwerk-wuppertal.de/ (Release 01.01.2027).
+
+Betrieb: eigener Docker-Container auf dem eigenen Server, siehe [DEPLOYMENT.md](DEPLOYMENT.md).
+Alle Schriften und Skripte werden selbst ausgeliefert, es werden keine Drittanbieter-Server geladen.
 
 ## Features
 
@@ -24,7 +27,7 @@ und Umgebung. Live unter: https://marlow932.github.io/kfz-gutachten-schuermann/
   Städte nach Entfernung in zwei Ringen (näher/weiter).
 - Leistungen inkl. Kostenvoranschlag (KVA) für Versicherungen bei kleineren Schäden.
 - SEO/GEO: strukturierte Daten (Schema.org LocalBusiness + FAQPage), `sitemap.xml`,
-  `robots.txt`, `llms.txt`, Domain `unfallschadengutachten-wuppertal.de` überall
+  `robots.txt`, `llms.txt`, Domain `schadenwerk-wuppertal.de` überall
   hinterlegt.
 
 ## Kontaktformular-Backend
@@ -50,6 +53,6 @@ E-Mail-Programm des Besuchers mit vorausgefüllter Nachricht.
 - **Impressum & Datenschutz**: Adresse, Rechtsform, USt-Angabe und Hosting-Anbieter sind
   noch als Platzhalter markiert (`.legal-placeholder`) — folgen kurz vor dem Livegang.
 - **Web3Forms Access Key** eintragen (siehe oben).
-- Echte Domain `unfallschadengutachten-wuppertal.de` registrieren/verbinden, falls noch
-  nicht geschehen.
+- Domain `schadenwerk-wuppertal.de` per DNS auf den Server zeigen lassen und den
+  Container starten (siehe DEPLOYMENT.md).
 - Platzhalter-Kundenbewertungen durch echte Google-Rezensionen ersetzen, sobald vorhanden.

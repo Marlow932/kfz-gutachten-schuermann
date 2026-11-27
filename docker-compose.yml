@@ -1,0 +1,53 @@
+# Startet die Website als eigenen Container:  docker compose up -d --build
+#
+# Auf dem Server läuft der Coolify-Traefik (Container coolify-proxy, Netzwerk "coolify").
+# Er findet diesen Container automatisch über die Labels unten, holt das Let's-Encrypt-
+# Zertifikat und leitet www. sowie http:// auf https://schadenwerk-wuppertal.de um.
+# Es wird kein Host-Port belegt.
+
+services:
+  website:
+    build: .
+    image: schadenwerk-website:latest
+    container_name: schadenwerk-web
+    restart: unless-stopped
+    networks:
+      - coolify
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    mem_limit: 64m
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=coolify
+      # HTTP -> HTTPS
+      - traefik.http.routers.schadenwerk-http.rule=Host(`schadenwerk-wuppertal.de`) || Host(`www.schadenwerk-wuppertal.de`)
+      - traefik.http.routers.schadenwerk-http.entrypoints=http
+      - traefik.http.routers.schadenwerk-http.middlewares=schadenwerk-https-redirect
+      - traefik.http.middlewares.schadenwerk-https-redirect.redirectscheme.scheme=https
+      - traefik.http.middlewares.schadenwerk-https-redirect.redirectscheme.permanent=true
+      # HTTPS
+      - traefik.http.routers.schadenwerk-https.rule=Host(`schadenwerk-wuppertal.de`) || Host(`www.schadenwerk-wuppertal.de`)
+      - traefik.http.routers.schadenwerk-https.entrypoints=https
+      - traefik.http.routers.schadenwerk-https.tls=true
+      - traefik.http.routers.schadenwerk-https.tls.certresolver=letsencrypt
+      - traefik.http.routers.schadenwerk-https.middlewares=schadenwerk-www-redirect,schadenwerk-hsts
+      # www -> ohne www
+      - traefik.http.middlewares.schadenwerk-www-redirect.redirectregex.regex=^https://www\.schadenwerk-wuppertal\.de/(.*)
+      - traefik.http.middlewares.schadenwerk-www-redirect.redirectregex.replacement=https://schadenwerk-wuppertal.de/$${1}
+      - traefik.http.middlewares.schadenwerk-www-redirect.redirectregex.permanent=true
+      - traefik.http.middlewares.schadenwerk-hsts.headers.stsSeconds=31536000
+      - traefik.http.services.schadenwerk.loadbalancer.server.port=8080
+
+networks:
+  coolify:
+    external: true

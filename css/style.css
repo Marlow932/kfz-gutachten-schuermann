@@ -2,7 +2,6 @@
    Stefan Schürmann – Kfz-Sachverständiger — v2 "Agency" Edition
    ========================================================================== */
 
-@import url('https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=satoshi@400,500,600,700,900&display=swap');
 
 :root {
   --bg: #06070a;
@@ -1409,3 +1408,12 @@ html.force-no-motion [data-gsap-item] {
 }
 html.force-no-motion .process-track { transform: none !important; }
 html.force-no-motion .area-pin { transform: translate(-50%, -50%) scale(1) !important; }
+
+/* Skip-Link: unsichtbar, erscheint bei Tastaturfokus */
+.skip-link {
+  position: absolute; left: 16px; top: -100px; z-index: 10000;
+  padding: 12px 18px; border-radius: 10px;
+  background: var(--accent); color: #fff; font-weight: 600; text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 16px; }
