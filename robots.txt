@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.unfallschadengutachten-wuppertal.de/sitemap.xml
+Sitemap: https://schadenwerk-wuppertal.de/sitemap.xml

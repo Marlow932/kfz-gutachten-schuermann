@@ -1,6 +1,6 @@
 /* ==========================================================================
    Stefan Schürmann – Kfz-Sachverständiger — v2 "Agency" Edition
-   Powered by GSAP + ScrollTrigger + Lenis (loaded via CDN in index.html)
+   Powered by GSAP + ScrollTrigger + Lenis (self-hosted in assets/vendor/)
    ========================================================================== */
 
 (function () {

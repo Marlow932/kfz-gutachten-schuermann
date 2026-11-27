@@ -1,0 +1,27 @@
+# Startet die Website als eigenen Container:  docker compose up -d --build
+#
+# Standard: Der Container ist nur lokal auf dem Server unter 127.0.0.1:8081 erreichbar.
+# Davor gehört der Reverse-Proxy des Servers (Nginx Proxy Manager, Traefik, Caddy, nginx),
+# der HTTPS für schadenwerk-wuppertal.de übernimmt und www. auf die Hauptdomain umleitet.
+# Den Port kannst du mit WEBSITE_PORT=xxxx in einer .env-Datei ändern.
+
+services:
+  website:
+    build: .
+    image: schadenwerk-website:latest
+    container_name: schadenwerk-website
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${WEBSITE_PORT:-8081}:8080"
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
